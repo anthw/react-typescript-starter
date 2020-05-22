@@ -22,6 +22,7 @@ if (app.get('env') === 'development') {
     webpackDevMiddleware(compiler, {
       publicPath: webpackConfig().output.publicPath || '/',
       stats: { colors: true },
+      writeToDisk: true,
     })
   )
 
